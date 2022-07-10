@@ -102,7 +102,8 @@ void Task38()
     FillArrayRandom(array1);
     Console.WriteLine("В массиве:");
     PrintArray(array1);
-    Console.WriteLine($"разница между максимальным и минимальным элементами равна {ElMax(array1) - ElMin(array1)}.");
+    double difference = Math.Round((ElMax(array1) - ElMin(array1)), 2);
+    Console.WriteLine($"разница между максимальным и минимальным элементами равна {difference}.");
 
     void FillArrayRandom(double[] FillArray)
     {
